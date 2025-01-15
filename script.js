@@ -140,12 +140,14 @@ checkoutBtn.addEventListener("click", function(){
             duration: 3000,
             close: true,
             gravity: "top", // `top` or `bottom`
-            position: "right", // `left`, `center` or `right`
+            position: "center", // `left`, `center` or `right`
             stopOnFocus: true, // Prevents dismissing of toast on hover
             style: {
               background: "#ef4444",
             },
           }).showToast();
+
+          return;
     }
 
     if(cart.length === 0 )return;
@@ -157,14 +159,16 @@ checkoutBtn.addEventListener("click", function(){
 
     const cartItems = cart.map((item) => {
         return(
-        ` ${item.name} Quantidade: (${item.quantity}) Preço: R$${item.price}|`
+        `${item.name}ㅤQuantidade: (${item.quantity})ㅤPreço: R$${item.price}ㅤㅤ
+        ㅤ|`
         )
     }).join("")
 
    const massage = encodeURIComponent(cartItems)
    const phone = "5585994510659"
+   const total = cartTotal.innerHTML
 
-   window.open(`https://wa.me/${phone}?text=${massage} Endereço:${addressInput.value}`, "_blank")
+   window.open(`https://wa.me/${phone}?text=${massage} Endereço:${addressInput.value} ${total}`, "_blank")
 
    cart = []
    updateCartMoodal

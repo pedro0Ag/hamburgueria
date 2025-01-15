@@ -11,17 +11,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <meta property="og:type" content="Website">
+    <meta property="og:title" content="Dev Burguer - O melhor">
+    <meta property="og:image" content="https://pedro0ag.github.io/hamburgueria/images/hamb-1.png">
+    <meta property="og:description" content="O melhor hamburguer caseiro e nosso!!!">
+    <meta property="og:site_name" content="Dev Burguer">
 
     <link rel="stylesheet" href="styles/output.css">
     <title>cardapio</title>
 </head>
 <body>
-    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+    <header class="w-full h-[420px] bg-zinc-900 bg-e bg-cover bg-center  img">
         <div class="w-full h-full flex flex-col justify-center items-center ">
             <img src="images/hamb-1.png" alt=""
             class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
             <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
-                dev burger                
+                Dev burger                
             </h1>
 
             <span class="text-white font-medium">Rua deve 10, conjunto esperança - CE</span>
@@ -42,13 +48,13 @@
     <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-11 mx-auto max-w-7xl px-2 mb-16">
 
     <div class="flex gap-2">
-        <img src="images/hamb-3.png" alt=""
+        <img src="images/hamb-1.png" alt=""
         class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
         
         <div> 
-            <p class="font-bold">Humburguer Grande</p>
-            <p class="text-sm">uma grande decilia que agrega sabor e alegrira as noites de quem saboreia um grande pao macio com a cand e suculenta de seus sucos
-            </p> 
+            <p class="font-bold">Cheddar Bacon Deluxe</p>
+
+            <p class="text-sm">Um suculento hambúrguer de carne bovina coberto com uma generosa fatia de cheddar derretido e crocantes tiras de bacon. Complementado por alface, tomate, cebola roxa e maionese, servido em um pão macio de brioche.</p> 
 
             <div class="flex items-center gap-2 justify-between mt-3">
             <p class="font-bold text-lg">R$ 18.90</p>
@@ -68,15 +74,16 @@
         class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
         
         <div> 
-            <p class="font-bold">Humburguer medio</p>
-            <p class="text-sm">uma grande decilia que agrega sabor e alegrira as noites de quem saboreia um grande pao macio com a cand e suculenta de seus sucos 
+            <p class="font-bold">BBQ Beef Master</p>
+
+            <p class="text-sm">Hambúrguer de carne 100% bovina grelhada, com molho barbecue defumado, cebolas caramelizadas, fatias de queijo cheddar e picles. Ideal para quem ama um toque defumado e sabor marcante.
             </p> 
 
             <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$ 13.90</p>
+            <p class="font-bold text-lg">R$ 22.90</p>
             <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
-            data-name="Humburguer medio"
-            data-price="13.90"
+            data-name="BBQ Beef Master"
+            data-price="22.90"
             >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
@@ -86,19 +93,43 @@
     </div>
 
     <div class="flex gap-2">
-        <img src="images/hamb-1.png" alt=""
+        <img src="images/hamb-3.png" alt=""
         class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
         
         <div> 
-            <p class="font-bold">Humburguer pequeno</p>
-            <p class="text-sm">uma grande decilia que agrega sabor e alegrira as noites de quem saboreia um grande pao macio com a cand e suculenta de seus sucos 
+            <p class="font-bold">Veggie Supreme</p>
+
+            <p class="text-sm">Para os amantes de uma opção sem carne, este hambúrguer é feito com um delicioso e temperado hambúrguer de grão-de-bico e quinoa. Ele vem acompanhado de alface, tomate, cebola roxa, molho de iogurte com hortelã e servido no pão integral.
             </p> 
 
             <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$ 9.90</p>
+            <p class="font-bold text-lg">R$ 39.90</p>
             <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
-            data-name="Humburguer pequeno"
-            data-price="9.90"
+            data-name="Veggie Supreme"
+            data-price="39.90"
+            >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="flex gap-2">
+        <img src="images/hamb-4.png" alt=""
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        
+        <div> 
+            <p class="font-bold">Melted Mushroom Swiss</p>
+
+            <p class="text-sm">Hambúrguer suculento coberto com cogumelos salteados e queijo suíço derretido. Uma combinação perfeita de sabor umami com a suavidade do queijo, servido com maionese, alface e tomate em um pão de hambúrguer macio.
+            </p> 
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 29.90</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+            data-name="Melted Mushroom Swiss"
+            data-price="29.90"
             >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
@@ -112,15 +143,39 @@
         class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
         
         <div> 
-            <p class="font-bold">Humburguer triplo</p>
-            <p class="text-sm">uma grande decilia que agrega sabor e alegrira as noites de quem saboreia um grande pao macio com a cand e suculenta de seus sucos 
+            <p class="font-bold">Spicy Chicken Crunch</p>
+
+            <p class="text-sm">Frango empanado crocante com uma camada de molho picante estilo buffalo, alface, tomate, picles e uma porção generosa de queijo cheddar. Tudo isso no pão brioche para um toque extra de suavidade.
             </p> 
 
             <div class="flex items-center gap-2 justify-between mt-3">
-            <p class="font-bold text-lg">R$ 34.90</p>
+            <p class="font-bold text-lg">R$ 25.90</p>
             <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
-            data-name="Humburguer triplo"
-            data-price="34.90"
+            data-name="Spicy Chicken Cruncho"
+            data-price="25.90"
+            >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="flex gap-2">
+        <img src="images/hamb-6.png" alt=""
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300">
+        
+        <div> 
+            <p class="font-bold">Tex-Mex Fiesta</p>
+
+            <p class="text-sm">Hambúrguer de carne bovina com guacamole, queijo cheddar, jalapeños picantes e cebolas roxas grelhadas. Acompanhado de alface, tomate e um molho especial de sour cream, trazendo um sabor mexicano irresistível.
+            </p> 
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 27.90</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" 
+            data-name="Tex-Mex Fiesta"
+            data-price="27.90"
             >
                 <i class="fa fa-cart-plus text-lg text-white"></i>
             </button>
