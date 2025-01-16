@@ -7,6 +7,7 @@ const checkoutBtn = document.getElementById('check-btn')
 const closeModalBtn = document.getElementById('close-btn')
 const cartCounter = document.getElementById('cart-cout')
 const addressInput = document.getElementById('address')
+const addressObs = document.getElementById('address-obs')
 const addressWarn = document.getElementById('addressWarn')
 
 let cart = []
@@ -130,7 +131,11 @@ addressInput.addEventListener('input', function(event){
     addressWarn.classList.add("hidden")
     addressInput.classList.remove("border-red-500")
   }
-})
+});
+
+addressObs.addEventListener('input', function(event){
+    let inputValue = event.target.value;
+});
 
 checkoutBtn.addEventListener("click", function(){
     const IsOpen = checkHorario();
@@ -166,9 +171,8 @@ checkoutBtn.addEventListener("click", function(){
 
    const massage = encodeURIComponent(cartItems)
    const phone = "5585994510659"
-   const total = cartTotal.innerHTML
 
-   window.open(`https://wa.me/${phone}?text=${massage} Endereço:${addressInput.value} ${total}`, "_blank")
+   window.open(`https://wa.me/${phone}?text=${massage} Endereço:${addressInput.value}ㅤㅤ OBS:${addressObs.value}`, "_blank")
 
    cart = []
    updateCartMoodal
@@ -179,7 +183,7 @@ checkoutBtn.addEventListener("click", function(){
 function checkHorario(){
     const data = new Date();
     const hora = data.getHours();
-    return hora >= 18 && hora < 22;
+    return hora >= 17 && hora < 22;
 }
 
 

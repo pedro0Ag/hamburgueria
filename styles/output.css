@@ -2685,7 +2685,7 @@ body{
 }
 
 .img{
-  background-image: url('/images/bg.png');
+  background-image: url("/images/hamb-2.png");
 }
 
 @media (min-width: 640px) {
